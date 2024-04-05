@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:text="TrackerCorrida"
+        android:textAlignment="viewStart"
+        android:textColor="#FF5722"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textRegistre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Registre sua corrida"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/textTitulo" />
+
+
+    <EditText
+        android:id="@+id/editTextDistance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Distância percorrida (em km)"
+        android:inputType="numberDecimal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRegistre" />
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Tempo gasto (em minutos)"
+        android:inputType="number"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDistance" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupTerrain"
+        android:layout_width="83dp"
+        android:layout_height="237dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTime">
+
+
+        <RadioButton
+            android:id="@+id/radioButtonTrail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trilha" />
+
+
+        <RadioButton
+            android:id="@+id/radioButtonRoad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asfalto" />
+
+
+        <RadioButton
+            android:id="@+id/radioButtonTrack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pista" />
+
+        <RadioButton
+            android:id="@+id/radioButtonTreadmill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Esteira" />
+
+
+        <RadioButton
+            android:id="@+id/radioButtonOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Outro" />
+    </RadioGroup>
+
+
+
+    <ImageView
+        android:id="@+id/imageViewTerrain"
+        android:layout_width="169dp"
+        android:layout_height="147dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintStart_toEndOf="@id/radioGroupTerrain"
+        app:layout_constraintTop_toTopOf="@id/radioGroupTerrain"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+
+    <Switch
+        android:id="@+id/switchOfficialRun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Salvar corrida"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDifficulty" />
+
+    <SeekBar
+        android:id="@+id/seekBarDifficulty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:max="10"
+        android:progress="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupTerrain" />
+
+    <TextView
+        android:id="@+id/textViewDifficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="Nível de Dificuldade:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seekBarDifficulty" />
+
+    <Button
+        android:id="@+id/btnExibir"
+        android:layout_width="138dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="Exibir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchOfficialRun"
+        app:layout_constraintVertical_bias="0.241" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="153dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:text="Limpar"
+        app:layout_constraintBottom_toBottomOf="@+id/btnExibir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toEndOf="@+id/btnExibir"
+        app:layout_constraintTop_toTopOf="@+id/btnExibir"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
