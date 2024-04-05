@@ -17,6 +17,12 @@ O projeto TrackerCorrida é uma aplicação Android desenvolvida para auxiliar o
 - Framework: Android SDK
 - Biblioteca de Layout: ConstraintLayout
 - IDE: Android Studio
+- 
+- ## Membros do Grupo
+Este projeto foi desenvolvido por:
+
+- Marcello Lassalla de Mello
+- Yasmin Ribeiro
 
 ## Como Utilizar
 
