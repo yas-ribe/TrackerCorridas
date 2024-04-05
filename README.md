@@ -7,9 +7,9 @@ O projeto TrackerCorrida é uma aplicação Android desenvolvida para auxiliar o
 - Registro da distância percorrida em quilômetros.
 - Registro do tempo gasto em minutos.
 - Seleção do tipo de terreno (trilha, asfalto, pista, esteira, entre outros).
-- Indicação se a corrida foi oficial.
 - Salvamento das informações registradas.
 - Limpeza dos campos de registro.
+- Escolha da dificuldade da corrida através de uma barra de progresso.
 
 ## Tecnologias Utilizadas
 
@@ -19,7 +19,7 @@ O projeto TrackerCorrida é uma aplicação Android desenvolvida para auxiliar o
 - IDE: Android Studio
 - 
 - ## Membros do Grupo
-Este projeto foi desenvolvido por:
+- Este projeto foi desenvolvido por:
 
 - Marcello Lassalla de Mello
 - Yasmin Ribeiro
