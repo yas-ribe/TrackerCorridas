@@ -30,8 +30,8 @@ O projeto TrackerCorrida é uma aplicação Android desenvolvida para auxiliar o
 2. Abra o projeto no Android Studio.
 3. Compile e execute o aplicativo em um dispositivo Android ou em um emulador.
 4. Registre suas corridas preenchendo os campos fornecidos.
-5. Se desejar, indique se a corrida foi oficial.
-6. Salve as informações registradas.
+5. Se desejar, salve a corrida.
+6. Exiba as informações registradas.
 7. Limpe os campos para um novo registro.
 
 ## Contribuições
